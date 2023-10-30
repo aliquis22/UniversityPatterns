@@ -9,10 +9,11 @@ class University():
     def get_schools(self):
         return self.schools
 class School():
-    def __init__(self, name, specialization, *courses):
+    def __init__(self, name, specialization):
         self.name = name
         self.specialization = specialization
-        self.course = list(courses)
+        self.courses = {1: [], 2: [], 3: [], 4: []}
+
 
 
 
