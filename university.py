@@ -31,3 +31,13 @@ class School():
 
 
 
+class Enrolle:
+    def __init__(self, university,school):
+        self.university = university
+        self.school = school
+    def create_students(self):
+        grp = group.Group("8К11",school )
+        for applicant in self.university.applicants:
+            std = Student(applicant[0].first_name, applicant[0].last_name, applicant[0].birthday, 100, applicant[0].email)
+            grp.add_student(std)
+        self.school.add_new(grp)

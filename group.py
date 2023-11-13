@@ -1,7 +1,7 @@
 class Group:
-    def __init__(self, name, school, curator):
+    def __init__(self, name, school, curator = None):
         self.name = name
-        self.school = school.name
+        self.school = school
         self.curator = curator
         self.students = []
 
