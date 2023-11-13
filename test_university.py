@@ -1,5 +1,6 @@
 import unittest
-from university import University, School
+from university import University
+from school import School
 
 class TestStudentClass(unittest.TestCase):
     def test_get_schools_returns_collection(self):
